@@ -1,0 +1,18 @@
+.container {
+    padding: 0 1rem; 
+    @include sm-up {
+        
+    }
+    @include md-up {
+        max-width: 765px;
+    }
+    @include lg-up {
+        max-width: 980px;
+    }
+    @include xl-up {
+        max-width: 1190px;
+    }
+    @include xxl-up {
+        max-width: 1280px;
+    }
+}

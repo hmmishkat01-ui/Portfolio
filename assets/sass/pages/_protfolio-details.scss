@@ -1,0 +1,302 @@
+// protfolio details main
+.protfolio-details-area{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    @include lg-up{
+        padding-top: 8rem;
+    }
+    @include xl-up{
+        padding-top: 6rem;
+    }
+    @include xxl-up {
+        padding-bottom: 5rem;
+    }
+    // bannner wrapper style here 
+    .banner-wrapper{
+        position: relative;
+        margin-bottom: 0;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+        img {
+            height: 15rem;
+            object-fit: cover;
+            object-position: center;
+            @include sm-up {
+                height: auto;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            inset: 0;
+            background: linear-gradient(rgba(255,255,255,0) 20%, rgba(#612BCC,0.75) 80%);
+            width: 100%;
+            height: 100%;
+            border-radius: .25rem .25rem 0 0;
+            @include md-up{
+                border-radius: .5rem .5rem 0 0;
+            }
+        }
+    }
+    // banner content style here
+    .banner-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        @include md-up {
+            padding: 2rem;
+        }
+        @include lg-up {
+            padding: 2.5rem 3rem;
+        }
+        @include xl-up {
+            padding: 2.5rem 5rem;
+        }
+        .subtitle {
+            font-size: .875rem;
+            line-height: 1.5;
+            color: $color__white;
+            margin-bottom: .4rem;
+            display: block;
+            @include lg-up{
+                font-size: 1rem;
+            }
+        }
+        .title{
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $color__white;
+            @include md-up{
+                font-size: 1.5rem;
+            }
+            @include lg-up {
+                font-size: 1.75rem;
+            }
+            @include xl-up{
+                line-height: 1.15;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    // banner meta style here
+    .banner-meta{
+        background: $color__theme__400;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 1rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        border-radius: 0 0 20px 20px;
+        html.dark & {
+            background: linear-gradient(to right, #0B0020, #3B1682);
+        }
+        @include sm-up{
+            @include flex-between;
+            padding: 1.5rem;
+        }
+        @include lg-up {
+            padding: 2rem 3rem;
+            margin-bottom: 3rem;
+        }
+        @include xl-up {
+            padding: 2rem 5rem;
+        }
+        p{
+            font-size: .875rem;
+            font-weight: 500;
+            color: $color__black;
+            line-height: 1.5;
+            margin-bottom: .25rem;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include md-up{
+                margin-bottom: .5rem;
+            }
+            @include lg-up {
+                font-size: 1rem;
+            }
+        }
+        span{
+            font-size: .875rem;            
+            display: inline-block;
+            line-height: 1.5;
+            color: $color__black__500;
+            html.dark & {
+                color: #dddddd;
+            }
+        }
+        a{
+            font-size: .875rem;
+            font-family: $font__primary;
+            display: inline-block;
+            line-height: 1.5;
+            color: $color__black__500;
+            transition: all .15s ease;
+            html.dark & {
+                color: #dddddd;
+            }
+            &:hover {
+                color: $color__theme;
+            }
+        }
+    }
+    // project details content style here
+    .project-details-content{
+        .title{
+            font-size: 1.25rem;
+            line-height: 1;
+            font-weight: 700;
+            color: $color__heading;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: linear-gradient(to right, #5E27CB, #E7DBFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            @include md-up{
+                font-size: 1.5rem;
+            }
+            @include  lg-up{
+                margin-bottom: 1.25rem;
+            }
+        }
+        .subtitle {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            line-height: 1.35;
+            html.dark & {
+                color: white;
+            }
+        }
+        .content{
+            font-size: .875rem;
+            color: $color__black__500;
+            line-height: 2;
+            margin-bottom: 25px;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include lg-up {
+                font-size: 1rem;
+            }
+        }
+    }
+    // image group style here 
+    .image-group{
+        margin-bottom: 1rem;
+        @include xl-up{
+            margin-bottom: 2rem;
+        }
+        .image{
+            display: block;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all .5s ease;
+            border-radius: .25rem;
+            @include sm-up{
+                margin-bottom: 0;
+            }
+            @include md-up{
+                border-radius: .5rem;
+            }
+            img{
+                transition: all .5s ease;
+                width: 100%;
+            }
+            &:hover{
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    // protfolio details slider style here
+    .protfolio-details-slider{
+        .swiper-slide{
+            overflow: hidden;
+            border-radius: .25rem;
+            @include md-up{
+                border-radius: .5rem;
+            }
+            img{
+                width: 100%;
+                max-height: 460px;
+                transition: .5s;
+                object-fit: cover;
+            }
+            &:hover{
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        // slider next button
+        .swiper-button-next, .swiper-button-prev {
+            width: 60px;
+            height: 60px;
+            background: $color__white;
+            border-radius: 1rem;
+            color: $color__heading;
+            display: none;
+            transform: translateY(-50%);
+            transition: all .15s ease;
+            &::after{
+                font-size: 1.25rem;
+            }
+            @include lg-up{
+                display: flex;
+            }
+            &:hover{
+                color: $color__white;
+                background: #612BCC;
+            }
+        }
+        .swiper-button-next{
+            right: 2rem;
+        }
+        // slider prev button
+        .swiper-button-prev{
+            left: 2rem;
+        }
+        // slider pagination 
+        .swiper-pagination{
+            @include lg-up{
+                display: none;
+            }
+            .swiper-pagination-bullet{
+                background: $color__hover;
+                margin: 0 5px;
+            }
+            .swiper-pagination-bullet-active{
+                background: $color__theme;
+            }
+        }
+    }
+    // slider content style here 
+    .slider-content{
+        .slide-content{
+            font-size: .875rem;
+            line-height: 1.6;
+            color: $color__black__500;
+            line-height: 2;
+            @include lg-up {
+                font-size: 1rem;
+            }
+            & + .slide-content{
+                margin-top: 1.5rem;
+            }
+        }
+        .discuss-btn{
+            margin-top: 2.5rem;
+            width: 100%;
+            font-weight: 500;
+            @include md-up {
+                padding: 1.125rem 3rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

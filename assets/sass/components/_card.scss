@@ -1,0 +1,80 @@
+// service card style here
+.service_card{
+    padding: 1.2rem;
+    border: 1px solid transparent;
+    background: linear-gradient(to right, #F4F0FD 90%, #FFFFFF) padding-box, linear-gradient(to right, white, white) border-box;
+    transition: all .3s ease;
+    box-shadow: 0 4px 4px 0 rgba(#000000, 0.02);
+    border-radius: .5rem;
+    html.dark & {
+        background: linear-gradient(to right, #5E27CA, #0B0020) padding-box, linear-gradient(to right, #0B0020, #0B0020) border-box;
+    }
+    @include lg-up{
+        padding: 2.125rem;
+    }
+    @include xxl-up {
+        padding: 3.125rem;
+    }
+    .card-header{
+        @include flex-between;
+        background: none;
+        border: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        transition: all .3s ease;
+        @include xl-up {
+            margin-bottom: 1.875rem;
+        }
+        img {
+            transition: all .3s ease;
+        }
+    }
+    .primary_btn {
+        border: 1px solid #4D4D4D;
+        font-size: 12px;
+        padding: 6px 15px 5px;
+        border-radius: 50px;
+        font-weight: 500;
+        line-height: 1.5;
+        transition: all .15s ease;
+        font-variant: normal;
+    }
+    .title {
+        margin-bottom: .675rem;
+        a {
+            font: 600 1.5rem/1.6 $font__primary;
+            transition: all .15s  ease;          
+        }
+    }
+    .content {
+        font-size: .875rem;
+        line-height: 2;
+        @include lg-up {
+            font-size: 1rem;
+        }
+    }
+    &:hover{
+        background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #5E27CA, #D1BEF6) border-box;
+
+        html.dark & {
+            background: linear-gradient(#0B0020, #0B0020) padding-box, linear-gradient(45deg, #5E27CA, #D1BEF6) border-box;
+        }
+        
+        .card-header{
+            img{
+                transform: rotate(45deg);
+            }
+        }
+        .title {
+            a {
+                background: linear-gradient(to right, #5E27CB, #E7DBFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            }
+        }
+        .primary_btn {
+            background: linear-gradient(to right, #5E27CB, #210C4B) border-box;
+            color: white;
+        }
+    }
+}

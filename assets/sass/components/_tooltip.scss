@@ -1,0 +1,16 @@
+.tooltip {
+    --clr: #111112;
+    html.dark & {
+        --clr: #5e27cb;
+    }
+
+    .tooltip-inner {
+        background-color: var(--clr);
+    }
+
+    @each $dir, $border in (right: border-right-color, left: border-left-color, top: border-top-color, bottom: border-bottom-color) {
+        &[data-popper-placement^=#{$dir}] .tooltip-arrow::before {
+            #{$border}: var(--clr);
+        }
+    }
+}

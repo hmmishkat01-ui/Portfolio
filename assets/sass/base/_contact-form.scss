@@ -1,0 +1,72 @@
+// contact form submision message style here
+.contact_action {
+    .section-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 0 3rem 0;
+    }
+    .content {
+        border: 1px solid $color__border;
+        padding: 2rem 2rem;
+        border-radius: 30px;
+        box-shadow: 0px 0px 1px 1px rgba(#dddddd, 0.010);
+        @include md-up {
+            padding: 3rem 6rem;
+        }
+        @include sm-up {
+            max-width: 27.5rem;
+        }
+        @include md-up {
+            max-width: 40rem;
+            border-radius: .5rem;
+        }
+        @include lg-up {
+            max-width: 52.5rem;
+        }
+        html.dark & {
+            border-color: #3b1682;
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-bottom: .5rem;
+            @include sm-up {
+                font-size: 1.7rem;
+            }
+            @include md-up {
+                font-size: 2rem;
+            }
+            @include lg-up {
+                font-size: 2.5rem;
+            }
+            html.dark & {
+                color: white;
+            }
+        }
+        p {
+            font-size: 15px;
+            @include lg-up {
+                font-size: 1rem;
+            }
+        }
+        a {
+            &.button-home{
+                display: inline-block;
+                transition: all .15s ease;
+                padding: .5rem 1rem;
+                @include md-up {
+                    padding: .75rem 1rem;
+                }
+                &:hover {
+                    color: $color__white;
+                }
+            }
+        }
+    }
+}
