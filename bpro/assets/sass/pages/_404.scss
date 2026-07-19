@@ -1,0 +1,38 @@
+// error main
+.error-area{
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0;
+
+    .title{
+        font-size: 1.25rem;
+        font-family: $font__primary;
+        font-weight: 500;
+        color: $color__heading;
+        line-height: 1.4;
+        margin-bottom: 1.875rem;
+        html.dark & {
+            color: #dddddd;
+        }
+    }
+    img{
+        margin-bottom: 1.875rem;
+        max-width: 18rem;
+        @include sm-up{
+            max-width: 100%;
+        }
+    }
+    .message{
+        font-size: 1.25rem;
+        font-family: $font__primary;
+        font-weight: 500;
+        color: $color__heading;
+        line-height: 1.4;
+        margin-bottom: 1.875rem;
+        html.dark & {
+            color: #dddddd;
+        }
+    }
+}

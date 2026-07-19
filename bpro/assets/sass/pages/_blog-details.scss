@@ -1,0 +1,372 @@
+// blog details style here
+.blog-details-area{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    @include lg-up{
+        padding-bottom: 5rem;
+        padding-top: 8rem;
+    }
+    @include xl-up{
+        padding-top: 6rem;
+    }
+    // banner image style here
+    .banner-wrapper{
+        position: relative;
+        margin-bottom: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        > img{
+            height: 15rem;
+            object-fit: cover;
+            object-position: center;
+            @include sm-up {
+                height: auto;
+            }
+            @include md-up {
+                border-radius: .25rem;  
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            inset: 0;
+            background: linear-gradient(rgba(255,255,255,0) 20%, rgba(#612BCC,0.75) 80%);
+            width: 100%;
+            height: 100%;
+            border-radius: .25rem .25rem 0 0;
+            @include md-up{
+                border-radius: .5rem .5rem 0 0;
+            }
+        }
+    }
+    // banner meta style here 
+    .meta-info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        @include xl-up {
+            gap: 20px;
+        }
+        @include xxl-up {
+            padding: 30px 80px;
+            gap: 30px;
+        }
+        .single-meta{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            .text{
+                font-size: 12px;
+                line-height: 1.5;
+                color: $color__white;
+                font-weight: 400;
+
+                @include xl-up {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // blog description style here
+    .blog-description{
+        @include xxl-up {
+            margin: 0 80px;
+        }
+        .title{
+            font-size: 1.5rem;
+            line-height: 1.15;
+            font-weight: 500;
+            color: $color__heading;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            display: inline-block;
+            background: linear-gradient(to right, #5E27CB, #E7DBFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            @include md-up{
+                font-size: 2rem;
+            }
+            @include xl-up{
+                font-size: 2.35rem;
+            }
+        }
+        .content{
+            color: $color__black__500;
+            line-height: 2;
+            margin-bottom: 1rem;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include lg-up {
+                margin-bottom: 2rem;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            @include lg-up {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    // social icon and tags style here
+    .blog-footer {
+        display: flex;
+        justify-content: space-between;
+        background: #F4F0FD;
+        padding: 1rem;
+        border-radius: 15px;
+        margin: 2rem 0 3rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        html.dark & {
+            background: linear-gradient(to right, #3B1682, #0B0020);
+        }
+        @include sm-up {
+            padding: 2rem 2.5rem;
+        }
+        @include md-up {
+            flex-direction: row;
+            align-items: center;
+        }
+        @include lg-up {
+            padding: 3rem 2.5rem;
+        }
+        @include xxl-up {
+            margin: 3rem 80px 3rem;
+        }
+        .social-icon-wrapper {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .text {
+                html.dark & {
+                    color: #dddddd;
+                }
+            }
+        }
+        .social-icon{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            a {
+                html.dark & {
+                    color: #9772E0;
+                }
+            }
+        }
+        .label{
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #111112;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include md-down {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        // tags style here 
+        .tags{
+            gap: .5rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            a{
+                background: linear-gradient(to right, #fff 0%, #fff 40%, #5E27CA 70%, #210C4B 100%);
+                background-size: 300% 100%;
+                background-position: left;
+                transition: background-position 0.25s ease-in-out;
+                border-radius: 8px;
+                padding: 5px 15px;
+                font-size: 14px;
+                color: #707070;
+                html.dark & {
+                    color: white;
+                    border: 1px solid transparent;
+                    background: linear-gradient(to right, #20133A, #20133A) padding-box,
+                                linear-gradient(to right, #5E27CA, #D1BEF6) border-box;
+
+                    &:hover {
+                        background: linear-gradient(to right, #5E27CA, #210C4B) padding-box,
+                                    linear-gradient(to right, #5E27CA, #210C4B) border-box;
+                    }
+                }
+                &:hover {
+                    color: white;
+                    background-position: right;
+                }
+
+            }
+        }
+    }
+    .comments-wrapper {
+        @include xxl-up {
+            margin: 0 80px;
+        }
+    }
+    // comment style here 
+    .comment-wrapper{
+        .title{
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 600;
+            color: $color__black__900;
+            margin-bottom: 2rem;
+            html.dark & {
+                color: white;
+            }
+            @include lg-up {
+                font-size: 1.5rem;
+            }
+        }
+        .comment-item{
+            display: flex;
+            gap: 1rem;
+            & + .comment-item{
+                margin-top: 1.875rem;
+            }
+        }
+        .comment-avatar{
+            flex: 0 0 40px;
+
+            @include lg-up {
+                flex: 0 0 50px;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #5E27CA, #D1BEF6) border-box;
+
+                @include lg-up {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        .comment-content{
+            flex: 1;
+        }
+        .avatar-name{
+            font-size: 1rem;
+            font-weight: 500;
+            color: $color__black__900;
+            line-height: 1.6;
+
+            html.dark & {
+                color: white;
+            }
+            @include lg-up{
+                font-size: 1.125rem;
+            }
+        }
+        .comment-meta{
+            font-size: .80rem;
+            display: inline-block;
+            line-height: 1.8;
+            color: $color__black__500;
+            margin-bottom: .5rem;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include lg-up {
+                font-size: .875rem;
+            }
+        }
+        .comment{
+            font-size: .875rem;
+            line-height: 2; 
+            color: $color__black__500;
+            margin-bottom: .5rem;
+            html.dark & {
+                color: #dddddd;
+            }
+            @include lg-up {
+                font-size: 1rem;
+            }
+        }
+        .reply-text{
+            font-size: .875rem;
+            line-height: 1.8;
+            color: $color__black__900;
+            font-weight: 500;
+            html.dark & {
+                color: #dddddd;
+            }
+        }
+        .reply-box{
+            margin-top: 1rem;
+            textarea{
+                width: 100%;
+                outline: 0;
+                box-shadow: none;
+                border: 1px solid transparent;
+                border-radius: 15px;
+                font-size: 14px;
+                color: $color__heading;
+                height: 5rem;
+                transition: all .15s ease;
+                background: linear-gradient(white, white) padding-box, linear-gradient(to right, #5E27CA, #D1BEF6) border-box;
+                html.dark & {
+                    background: linear-gradient(#0B0020, #0B0020) padding-box, linear-gradient(to right, #5E27CA, #D1BEF6) border-box;
+
+                }
+                &:focus{
+                    border: 1px solid $color__theme;
+                }
+            }
+        }
+        // comment box style here
+        .comment-box{
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid transparent;
+            background: linear-gradient(#F4F0FD, #F4F0FD) padding-box, linear-gradient(to right, #5E27CA, #D1BEF6) border-box;
+            margin-top: 3.8rem;
+            box-shadow: 0 4px 4px 0 rgba(#000000, 0.02);
+            margin-bottom: 2rem;
+            html.dark & {
+                background: linear-gradient(#0B0020, #0B0020) padding-box, linear-gradient(to right, #5E27CA, #D1BEF6) border-box;
+
+            }
+            @include lg-up{
+                margin-bottom: 0;
+            }
+            @include lg-up{
+                padding: 2.5rem;
+            }
+            .title{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $color__black__900;
+                line-height: 1.5;
+                margin-bottom: 1.25rem;
+                html.dark & {
+                    color: white;
+                }
+                @include lg-up {
+                    font-size: 1.5rem;
+                }
+            }
+
+            input, textarea {
+                border-radius: 15px;
+            }
+        }
+    }
+}
