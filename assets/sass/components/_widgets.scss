@@ -1,0 +1,134 @@
+
+aside {
+    .widget {
+        border-radius: 20px;
+        padding: 2.5rem 1.5rem;
+        border: 1px solid $color__theme;
+        box-shadow: 0 5px 15px 3px rgba(#000001, 0.03);
+        html.dark & {
+            border-color: #0b0020;
+            background: linear-gradient(to right, #3B1682, #0B0020);
+        }
+        @include lg-up{
+            padding: 1rem;
+        }
+        @include xxl-up{
+            padding: 2.25rem 2rem;
+        }
+
+        & + .widget {
+            margin-top: 1rem;
+            @include xxl-up {
+                margin-top: 1.5rem;
+            }
+        }
+        .widget-title {
+            font-size: 18px; 
+            color: $color__heading;
+            line-height: 1;
+            margin-bottom: 1rem;
+            padding-top: 12px;
+            display: block;
+            font-weight: 500;
+            position: relative;
+            html.dark & {
+                color: white;
+            }
+
+            &::before {
+                content: '';
+                height: 2px;
+                width: 50px;
+                background-color: #9772E0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        ul {
+            li {
+                border-bottom: 1px solid #EEEFFF;
+                html.dark & {
+                    border-color: #62488F;
+                }
+                a {
+                    display: block;
+                    padding: 10px 0;
+                    color: #4D4D4D;
+                    html.dark & {
+                        color: #dddddd;
+                    }
+                    @include md-down {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .tagcloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            a{
+                border: 1px solid #D1BEF6;
+                background: linear-gradient(to right, #fff 0%, #fff 40%, #5E27CA 70%, #210C4B 100%);
+                background-size: 300% 100% !important;
+                background-position: left !important;
+                transition: background-position 0.25s ease-in-out;
+                border-radius: 8px;
+                padding: 5px 15px;
+                font-size: 14px;
+                color: #707070;
+                html.dark & {
+                    color: #dddddd;
+                    background: linear-gradient(to right, #37147a 0%, #12032e 40%, #5E27CA 70%, #210C4B 100%);
+                }
+                &:hover {
+                    color: white;
+                    background-position: right !important;
+                }
+            }
+                
+        }
+    }
+}
+// search widget style here 
+.widget_search {
+    .input-group{
+        flex-wrap: nowrap;
+        background-color: #F4F0FD;
+        padding: 8px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    input{
+        width: 100%;
+        height: 48px;
+        border: 0;
+        font-size: 1rem;
+        outline: 0;
+        box-shadow: none;
+        padding: 1rem;
+        background-color: transparent;
+        html.dark & {
+            background-color: transparent;
+            &::placeholder {
+                color: black !important;
+            }
+        }
+        &:focus {
+            background-color: transparent;
+        }        
+    }
+    .search-btn{
+        font-size: 14px;
+        color: $color__white;
+        line-height: 1.8;
+        padding: 0 20px;
+        border: 0;
+        border-radius: 50px !important;
+        background: linear-gradient(to right, #5E27CB 0%, #210C4B 51%, #5E27CB 100%) border-box;
+        background-size: 200% auto;
+        margin-left: 0 !important;
+    }
+} 

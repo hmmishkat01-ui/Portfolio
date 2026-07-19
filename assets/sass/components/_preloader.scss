@@ -1,0 +1,82 @@
+// preloader main 
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: $color__theme__500;
+    z-index: 2202420;
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+    html.dark & {
+        background: #231442;
+    }
+    
+    // preloader loading content
+    .content {
+        color: $color__heading;
+        font-family: $font__primary;
+        margin-top: 2rem;
+        letter-spacing: .675rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.25rem;
+
+        html.dark & {
+            color: #dddddd;
+        }
+        
+        @include xxl-up {
+            font-size: 1.6rem;
+
+        }
+    }
+}
+  
+/** preloader shape style here **/
+.preShape1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.125rem 3.125rem 0 0;
+    border-color: #111112 transparent transparent transparent;
+    margin: 0 auto;
+    animation: preShape1 1s ease-in-out infinite normal;
+    html.dark & {
+        border-color: white transparent transparent transparent;
+
+    }
+}
+  
+.preShape2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3.125rem 3.125rem;
+    border-color: transparent  transparent #5e27ca  transparent ;
+    margin: -3.125rem auto 0;
+    animation: preShape2 1s ease-in-out infinite alternate;
+}
+  
+/** animation starts here **/
+@keyframes preShape1 {
+    0% {
+      transform: rotate(-360deg);
+    }  
+    
+    100% {
+    }
+}
+  
+@keyframes preShape2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+    }
+}
+
+  

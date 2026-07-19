@@ -1,0 +1,208 @@
+// Clearfix
+@mixin clearfix() {
+    content: "";
+    display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+    clear: both;
+}
+
+//display div as a table
+@mixin table_display {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@mixin xxl-down {
+    @media screen and (max-width: 1399px) {
+        @content;
+    } 
+}
+@mixin xl-down {
+    @media screen and (max-width: 1199px) {
+        @content;
+    } 
+}
+@mixin lg-down {
+    @media screen and (max-width: 991px) {
+        @content;
+    } 
+}
+@mixin md-down {
+    @media screen and (max-width: 767px) {
+        @content;
+    } 
+}
+@mixin sm-down {
+    @media screen and (max-width: 575px) {
+        @content;
+    } 
+}
+@mixin xs-down {
+    @media screen and (max-width: 479px) {
+        @content;
+    } 
+}
+@mixin xs-up {
+    @media screen and (min-width: 480px) {
+        @content;
+    } 
+}
+@mixin sm-up {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg-up {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin tab-up {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin xl-up {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin xxl-up {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+@mixin xxxl-up {
+    @media screen and (min-width: 1900px) {
+        @content;
+    }
+}
+@mixin minMax($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+// Center block
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Center block
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// Display Inline Block and align Center
+@mixin inline-flex-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// With and Height
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin transition($time) {
+    transition: all $time ease;
+}
+
+// Spacing (Margin - Padding)
+@mixin generate($prefix, $property) {
+    $spacing: 1rem;
+    @for $i from 1 through 20 {
+        .#{$prefix}-#{$i} {
+            #{$property}: $spacing * $i;
+        }
+    }
+}
+
+
+// change to false if its not imported into bootstrap
+$use-bootstrap: false;
+
+// margin and padding values array
+$space-values : (
+    0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+) !default;
+
+// margin and padding shorthands
+$space-prefixes : (
+    p  : padding,
+    pt : padding-top,
+    pr : padding-right,
+    pb : padding-bottom,
+    pl : padding-left,
+    m  : margin,
+    mt : margin-top,
+    mr : margin-right,
+    mb : margin-bottom,
+    ml : margin-left,
+) !default;
+
+// change these values if its not imported into bootstrap
+$grid-breakpoints-custom: (
+    
+    xs: 0,
+    
+    sm: 576px,
+    
+    md: 768px,
+
+    lg: 992px,
+
+    xl: 1200px,
+
+    xxl: 1400px,
+
+    xxxl: 1900px,
+
+) !default;
+
+$breakpoints : $grid-breakpoints-custom;
+@if $use-bootstrap {
+    $breakpoints : $grid-breakpoints;
+}
+
+
+
+// main function definition
+@mixin make-space($values, $prefixes, $breakpoints) {
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    // if xs value = 0, set it global without media queries
+        @if($breakpoint-value == 0) {
+            @each $attr-short, $attr-long in $prefixes {
+                @each $value in $values {
+                    .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+                        #{$attr-long}: #{$value}#{'rem'};
+                    }
+                }
+            }
+        }
+        // breakpoint values that not equal to 0
+        @else {
+            @media screen and (min-width: $breakpoint-value) {
+                @each $attr-short, $attr-long in $prefixes {
+                    @each $value in $values {
+                        .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+                            #{$attr-long}: #{$value}#{'rem'};
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

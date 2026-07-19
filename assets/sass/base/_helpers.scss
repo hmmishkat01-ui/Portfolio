@@ -1,0 +1,154 @@
+/*-------------------------------------------------
+    [ ## Fields ]
+---------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: 0 0 0rem 100rem white inset ;
+    -webkit-box-shadow: 0 0 0rem 100rem white inset !important;
+    -webkit-text-fill-color: $color__black !important;
+
+    html.dark & {
+        box-shadow: 0 0 0rem 100rem #231442 inset ;
+        -webkit-box-shadow: 0 0 0rem 100rem #231442 inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+}
+input:-webkit-autofill:focus {
+    box-shadow: 0 0 0rem 100rem white inset;
+    -webkit-box-shadow: 0 0 0rem 100rem white inset !important;
+    -webkit-text-fill-color: $color__black !important;
+
+    html.dark & {
+        box-shadow: 0 0 0rem 100rem #231442 inset ;
+        -webkit-box-shadow: 0 0 0rem 100rem #231442 inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+}
+
+input {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid $color__border__700;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: .875rem;
+    transition: all .15s ease;
+    html.dark & {
+        border-color: #231442;
+        background-color: #231442;
+        color: white;
+    }
+    @include lg-up{
+        font-size: 1rem;
+        height: 3.43rem;
+    }
+    &:focus{
+        border-color: $color__theme;
+
+        html.dark & {
+            border-color: #5E27CA;
+            background-color: #0B0020;
+        }
+    }
+}
+textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    font-size: .875rem;
+    border: 1px solid $color__border__700;
+    border-radius: 10px;
+    transition: all .15s ease;
+    box-shadow: none;
+    html.dark & {
+        border-color: #231442;
+        background-color: #231442;
+        color: white;
+    }
+    @include lg-up {
+        font-size: 1rem;
+    }
+    &:focus{
+        border-color: $color__theme;  
+        outline: 0;
+        box-shadow: none;
+    }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color__black;
+    opacity: .4; 
+    font-size: .875rem;
+    html.dark & {
+        color: white;
+    }
+    @include lg-up {
+        font-size: 1rem;
+    }
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: $color__black;
+    opacity: .4; 
+    font-size: .875rem;
+    html.dark & {
+        color: white;
+    }
+    @include lg-up {
+        font-size: 1rem;
+    }
+}
+.form-control {
+    font-size: 1.6rem;
+    &:focus {
+        box-shadow: none;
+        border-color: $color__theme;
+    }
+}
+
+.form-floating > .form-control {
+    border: none;
+    border-bottom: .1rem solid rgba(0,0,0,0.1);
+    border-radius: 0;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ */
+.figure, figure {
+	display: block;
+    margin: 0;
+}
