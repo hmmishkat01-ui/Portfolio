@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HM Mishkat — Web Designer & Developer</title>
+  <meta name="description" content="HM Mishkat is a professional web designer and developer from Bangladesh, specializing in responsive websites, WordPress development, and UI/UX design." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-name">HM</span>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home">
+        <span class="logo-badge">HM</span>
+        <span class="logo-text">Mishkat</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="work.html" class="nav-link">Work</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-container">
+      <div class="hero-text" data-reveal>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">HM <span class="gradient-text">Mishkat</span></h1>
+        <h2 class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typewriter" id="typewriter"></span>
+        </h2>
+        <p class="hero-desc">
+          I craft clean, high-converting websites and digital experiences that help businesses grow. Based in Bangladesh 🇧🇩, working with clients worldwide.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn-primary magnetic">View My Work</a>
+          <a href="#contact" class="btn-outline magnetic">Let's Talk</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/hmmishkat01-ui" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/mashfiqur-rahman01/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/8801914726066" target="_blank" class="social-link" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:hafazmishkat@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <div class="hero-img-glow"></div>
+          <div class="hero-img-frame">
+            <img src="assets/img/profile.png" alt="HM Mishkat" class="hero-img"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#5B8EFF22,#A855F722)'" />
+          </div>
+          <div class="floating-card card-1">
+            <i class="fas fa-code"></i>
+            <div>
+              <span>25+</span>
+              <small>Projects</small>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <i class="fas fa-star"></i>
+            <div>
+              <span>Happy</span>
+              <small>Clients</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Web Design</span><span class="mdot">◆</span>
+      <span>WordPress Development</span><span class="mdot">◆</span>
+      <span>UI/UX Design</span><span class="mdot">◆</span>
+      <span>Frontend Development</span><span class="mdot">◆</span>
+      <span>Responsive Design</span><span class="mdot">◆</span>
+      <span>SEO Optimization</span><span class="mdot">◆</span>
+      <span>Web Design</span><span class="mdot">◆</span>
+      <span>WordPress Development</span><span class="mdot">◆</span>
+      <span>UI/UX Design</span><span class="mdot">◆</span>
+      <span>Frontend Development</span><span class="mdot">◆</span>
+      <span>Responsive Design</span><span class="mdot">◆</span>
+      <span>SEO Optimization</span><span class="mdot">◆</span>
+    </div>
+  </div>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-wrap">
+            <img src="assets/img/profile.png" alt="HM Mishkat" class="about-img"
+              onerror="this.style.display='none'" />
+            <div class="about-exp-badge">
+              <span class="exp-num">1+</span>
+              <span class="exp-text">Years of<br/>Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Turning ideas into <span class="gradient-text">digital reality</span></h2>
+          <p class="about-bio">
+            I'm <strong>HM Mishkat</strong>, a passionate web designer and developer from Bangladesh. I specialize in creating stunning, responsive websites that not only look great but also drive real results for my clients.
+          </p>
+          <p class="about-bio">
+            With skills in both design and development, I bridge the gap between creative vision and technical execution — delivering pixel-perfect websites that convert visitors into customers.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-user"></i> Name</span>
+              <span class="info-value">HM Mishkat</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
+              <span class="info-value">hafazmishkat@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+              <span class="info-value">+880 191-472-6066</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <span class="info-value">Bangladesh 🇧🇩</span>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="#contact" class="btn-primary magnetic">Hire Me</a>
+            <a href="#" class="btn-outline magnetic">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num" data-target="25">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="1">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Open Source Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">My Skills</div>
+        <h2 class="section-title">Tools & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-desc">A curated set of tools I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-tab="development">
+          <i class="fas fa-code"></i> Development
+        </button>
+        <button class="skill-tab" data-tab="design">
+          <i class="fas fa-pen-nib"></i> Design
+        </button>
+        <button class="skill-tab" data-tab="tools">
+          <i class="fas fa-tools"></i> Tools & CMS
+        </button>
+      </div>
+
+      <!-- DEVELOPMENT -->
+      <div class="skills-panel active" id="tab-development">
+        <div class="skills-card-grid">
+          <div class="skill-card" style="--sk-color:#E34F26">
+            <div class="sk-icon-wrap"><i class="devicon-html5-plain colored"></i></div>
+            <span class="sk-name">HTML5</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#1572B6">
+            <div class="sk-icon-wrap"><i class="devicon-css3-plain colored"></i></div>
+            <span class="sk-name">CSS3</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#F7DF1E">
+            <div class="sk-icon-wrap"><i class="devicon-javascript-plain colored"></i></div>
+            <span class="sk-name">JavaScript</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#7952B3">
+            <div class="sk-icon-wrap"><i class="devicon-bootstrap-plain colored"></i></div>
+            <span class="sk-name">Bootstrap</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#CC6699">
+            <div class="sk-icon-wrap"><i class="devicon-sass-original colored"></i></div>
+            <span class="sk-name">SASS / SCSS</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#0769AD">
+            <div class="sk-icon-wrap"><i class="devicon-jquery-plain colored"></i></div>
+            <span class="sk-name">jQuery</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#777BB4">
+            <div class="sk-icon-wrap"><i class="devicon-php-plain colored"></i></div>
+            <span class="sk-name">PHP</span>
+            <span class="sk-level intermediate">Intermediate</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#4479A1">
+            <div class="sk-icon-wrap"><i class="devicon-mysql-plain colored"></i></div>
+            <span class="sk-name">MySQL</span>
+            <span class="sk-level intermediate">Intermediate</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:60%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESIGN -->
+      <div class="skills-panel" id="tab-design">
+        <div class="skills-card-grid">
+          <div class="skill-card" style="--sk-color:#F24E1E">
+            <div class="sk-icon-wrap"><i class="devicon-figma-plain colored"></i></div>
+            <span class="sk-name">Figma</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#31A8FF">
+            <div class="sk-icon-wrap"><i class="devicon-photoshop-plain colored"></i></div>
+            <span class="sk-name">Photoshop</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#FF61F6">
+            <div class="sk-icon-wrap"><i class="devicon-xd-plain colored"></i></div>
+            <span class="sk-name">Adobe XD</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#FF9A00">
+            <div class="sk-icon-wrap"><i class="devicon-illustrator-plain colored"></i></div>
+            <span class="sk-name">Illustrator</span>
+            <span class="sk-level intermediate">Intermediate</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#5B8EFF">
+            <div class="sk-icon-wrap"><i class="fas fa-layer-group" style="color:#5B8EFF"></i></div>
+            <span class="sk-name">UI Design</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#A855F7">
+            <div class="sk-icon-wrap"><i class="fas fa-mobile-alt" style="color:#A855F7"></i></div>
+            <span class="sk-name">Responsive Design</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOOLS & CMS -->
+      <div class="skills-panel" id="tab-tools">
+        <div class="skills-card-grid">
+          <div class="skill-card" style="--sk-color:#21759B">
+            <div class="sk-icon-wrap"><i class="devicon-wordpress-plain colored"></i></div>
+            <span class="sk-name">WordPress</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#F05032">
+            <div class="sk-icon-wrap"><i class="devicon-git-plain colored"></i></div>
+            <span class="sk-name">Git</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#E8E8E8">
+            <div class="sk-icon-wrap"><i class="devicon-github-original" style="color:#E8E8E8"></i></div>
+            <span class="sk-name">GitHub</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#007ACC">
+            <div class="sk-icon-wrap"><i class="devicon-vscode-plain colored"></i></div>
+            <span class="sk-name">VS Code</span>
+            <span class="sk-level expert">Expert</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#4CAF50">
+            <div class="sk-icon-wrap"><i class="fas fa-search-plus" style="color:#4CAF50"></i></div>
+            <span class="sk-name">SEO</span>
+            <span class="sk-level advanced">Advanced</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill-card" style="--sk-color:#FBBC05">
+            <div class="sk-icon-wrap"><i class="fab fa-google" style="color:#FBBC05"></i></div>
+            <span class="sk-name">Google Analytics</span>
+            <span class="sk-level intermediate">Intermediate</span>
+            <div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">Services I <span class="gradient-text">Offer</span></h2>
+        <p class="section-desc">Professional digital services tailored to your business needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom, clean, and fast websites built with HTML, CSS, JavaScript, and PHP. Pixel-perfect from design to deployment.</p>
+          <div class="service-number">01</div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fab fa-wordpress"></i></div>
+          <h3>WordPress Development</h3>
+          <p>Custom WordPress themes, plugin customization, WooCommerce stores — functional, fast, and easy to manage.</p>
+          <div class="service-number">02</div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Modern, user-centric designs crafted in Figma and Adobe XD that convert visitors into loyal customers.</p>
+          <div class="service-number">03</div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3>SEO & Optimization</h3>
+          <p>Speed optimization, on-page SEO, and performance tuning to help your site rank higher and load blazing fast.</p>
+          <div class="service-number">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section class="portfolio section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">My Recent <span class="gradient-text">Work</span></h2>
+        <p class="section-desc">A selection of projects crafted with care and attention to detail.</p>
+      </div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" alt="Corporate Website" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Corporate Business Website</h3>
+            <p>Modern, responsive corporate site with smooth animations and optimized conversion flow.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="wordpress">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80" alt="E-commerce Store" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>WordPress</span><span>WooCommerce</span></div>
+            <h3>E-Commerce Fashion Store</h3>
+            <p>Full-featured WooCommerce store with custom theme and advanced product filtering.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="uiux">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Dashboard UI" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>Figma</span><span>UI Design</span></div>
+            <h3>Analytics Dashboard UI</h3>
+            <p>Clean, data-driven dashboard UI designed for a SaaS analytics platform.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Landing Page" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>SaaS Product Landing Page</h3>
+            <p>High-converting landing page with animated sections and clear CTA hierarchy.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="wordpress">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80" alt="Blog Website" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>WordPress</span><span>SEO</span></div>
+            <h3>Personal Blog & Portfolio</h3>
+            <p>Custom WordPress blog with SEO optimization and blazing-fast load speeds.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="uiux">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Mobile App Design" loading="lazy" />
+            <div class="port-overlay">
+              <a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>Figma</span><span>Mobile UI</span></div>
+            <h3>Food Delivery App UI</h3>
+            <p>Complete mobile UI/UX design system for a food ordering and delivery service.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024 — Present</div>
+          <div class="timeline-card">
+            <h3>Freelance Web Designer & Developer</h3>
+            <span class="timeline-company">Self-Employed · Remote</span>
+            <p>Working with international and local clients to build custom websites, WordPress solutions, and UI/UX designs. Delivered 25+ projects across multiple industries with 100% client satisfaction.</p>
+            <div class="timeline-tags">
+              <span>Web Design</span><span>WordPress</span><span>UI/UX</span><span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 — 2024</div>
+          <div class="timeline-card">
+            <h3>Junior Web Developer</h3>
+            <span class="timeline-company">Digital Agency · Bangladesh</span>
+            <p>Built and maintained client websites using HTML, CSS, JavaScript, and WordPress. Collaborated with designers to implement responsive, cross-browser compatible solutions for 10+ clients.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>WordPress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 — 2023</div>
+          <div class="timeline-card">
+            <h3>Learning & Building</h3>
+            <span class="timeline-company">Self-Learning · Personal Projects</span>
+            <p>Intensively learned web design and development fundamentals. Built personal projects, mastered tools like Figma, Photoshop, and VS Code, and published first open-source projects on GitHub.</p>
+            <div class="timeline-tags">
+              <span>Figma</span><span>Photoshop</span><span>HTML/CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Mishkat delivered an outstanding website for our business. His attention to detail and understanding of our brand was exceptional. Highly recommend for any web project!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>R</span></div>
+              <div>
+                <strong>Rahul Ahmed</strong>
+                <span>CEO, TechStartup BD</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"The e-commerce store Mishkat built for us significantly increased our online sales. Clean design, fast load times, and he was always responsive. Excellent work!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>S</span></div>
+              <div>
+                <strong>Sarah Mitchell</strong>
+                <span>Owner, Style Shop UK</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Professional, responsive, and creative. Mishkat understood exactly what we needed and delivered beyond our expectations. Will definitely collaborate again on future projects."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><span>K</span></div>
+              <div>
+                <strong>Kamal Hassan</strong>
+                <span>Marketing Director, GrowX Agency</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <!-- Emotional headline -->
+      <div class="contact-headline reveal">
+        <span class="ch-emoji">👋</span>
+        <h2>Have a project? <span class="gradient-text">Let's talk.</span></h2>
+        <p>
+          Every great website starts with a conversation. Whether you have a clear vision or just a rough idea — I'm here to listen, understand, and bring it to life. No pressure, no obligation.
+        </p>
+        <span class="contact-available">
+          <span class="ca-dot"></span>
+          Currently available for new projects
+        </span>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: personal note + channels -->
+        <div class="contact-info-panel reveal">
+          <div class="contact-personal-note">
+            <p>"I treat every project like it's my own business. I don't just build websites — I build tools that help your business grow. Let's create something you'll be proud of."</p>
+            <div class="note-sig">
+              <div class="sig-avatar">HM</div>
+              <div>
+                <span class="sig-name">HM Mishkat</span>
+                <span class="sig-title">Web Designer & Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="mailto:hafazmishkat@gmail.com" class="contact-channel ch-email">
+            <div class="ch-icon email"><i class="fas fa-envelope"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">Email me at</span>
+              <span class="ch-value">hafazmishkat@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/8801914726066" target="_blank" class="contact-channel ch-wa">
+            <div class="ch-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">WhatsApp</span>
+              <span class="ch-value">+880 191-472-6066</span>
+              <span class="ch-badge">
+                <i class="fas fa-bolt"></i> Fastest reply
+              </span>
+            </div>
+          </a>
+
+          <a href="https://github.com/hmmishkat01-ui" target="_blank" class="contact-channel ch-github">
+            <div class="ch-icon github"><i class="fab fa-github"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">See my code on</span>
+              <span class="ch-value">github.com/hmmishkat01</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mashfiqur-rahman01/" target="_blank" class="contact-channel ch-linkedin">
+            <div class="ch-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">Professional profile</span>
+              <span class="ch-value">linkedin.com/in/hmmishkat</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right: form panel -->
+        <div class="contact-form-wrap reveal">
+          <p class="form-title">Send me a message</p>
+          <p class="form-subtitle">I reply within 24 hours. Tell me about your project — the more details, the better.</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="formName" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="formEmail" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="formSubject" placeholder="Project type (Website, WordPress, UI Design…)" />
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" placeholder="Tell me about your project, budget, timeline — anything helps!" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full magnetic">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message received! I'll get back to you within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-badge">HM</span>
+          <span class="logo-text">Mishkat</span>
+        </div>
+        <p class="footer-tagline">Crafting digital experiences that convert.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/hmmishkat01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/hmmishkat" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/8801914726066" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:hafazmishkat@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HM Mishkat. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart" style="color:#5B8EFF;margin:0 3px"></i> from Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

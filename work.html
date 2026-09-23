@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — HM Mishkat | Web Designer & Developer</title>
+  <meta name="description" content="Browse HM Mishkat's portfolio of web design, WordPress development, and UI/UX projects — real websites built for real businesses." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <span class="logo-badge">HM</span>
+        <span class="logo-text">Mishkat</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="work.html" class="nav-link active">Work</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-text reveal">
+          <div class="section-label">Portfolio</div>
+          <h1>Selected <span class="gradient-text">work</span> I'm proud of.</h1>
+          <p>
+            A collection of websites, stores, and interfaces built for real businesses — each one designed to look great and actually perform.
+          </p>
+          <div class="work-stat-row">
+            <div class="work-stat-chip"><strong>25+</strong><span>Projects Delivered</span></div>
+            <div class="work-stat-chip"><strong>20+</strong><span>Happy Clients</span></div>
+            <div class="work-stat-chip"><strong>3</strong><span>Core Specialties</span></div>
+          </div>
+        </div>
+        <div class="page-hero-img reveal" style="position:relative">
+          <img
+            src="assets/img/profile.png"
+            alt="HM Mishkat — Web Designer"
+            class="page-hero-photo"
+            onerror="this.style.display='none'"
+          />
+          <div class="page-hero-float" style="top:6%; right:-4%">
+            <i class="fas fa-layer-group"></i>
+            <div><span>9 Projects</span><small>Showcased below</small></div>
+          </div>
+          <div class="page-hero-float" style="bottom:4%; left:-6%; animation-delay:1.4s">
+            <i class="fas fa-star"></i>
+            <div><span>100%</span><small>Client Satisfaction</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STRIP -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Web Design</span><span class="mdot">◆</span>
+      <span>WordPress & WooCommerce</span><span class="mdot">◆</span>
+      <span>UI/UX Design</span><span class="mdot">◆</span>
+      <span>Landing Pages</span><span class="mdot">◆</span>
+      <span>Dashboards</span><span class="mdot">◆</span>
+      <span>SEO Optimization</span><span class="mdot">◆</span>
+      <span>Web Design</span><span class="mdot">◆</span>
+      <span>WordPress & WooCommerce</span><span class="mdot">◆</span>
+      <span>UI/UX Design</span><span class="mdot">◆</span>
+      <span>Landing Pages</span><span class="mdot">◆</span>
+      <span>Dashboards</span><span class="mdot">◆</span>
+      <span>SEO Optimization</span><span class="mdot">◆</span>
+    </div>
+  </div>
+
+  <!-- ==================== FEATURED PROJECT ==================== -->
+  <section class="section" style="padding-bottom:0">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Case Study</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Project</span></h2>
+      </div>
+
+      <div class="featured-project reveal">
+        <div class="fp-img">
+          <span class="fp-badge">Featured</span>
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&q=80" alt="Style Shop UK — E-commerce store" loading="lazy" />
+        </div>
+        <div class="fp-content">
+          <div class="port-tags"><span>WordPress</span><span>WooCommerce</span><span>UI/UX</span></div>
+          <h3>Style Shop UK — Fashion E‑commerce</h3>
+          <p>
+            A full-featured WooCommerce store built for a UK-based fashion retailer — custom theme, advanced product filtering, and a checkout flow tuned for conversion. The result: faster load times and a noticeable lift in online sales.
+          </p>
+          <div class="fp-meta">
+            <div><span>Role</span><strong>Design & Dev</strong></div>
+            <div><span>Stack</span><strong>WordPress, WooCommerce</strong></div>
+            <div><span>Outcome</span><strong>↑ Online Sales</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO GRID ==================== -->
+  <section class="portfolio section" id="portfolio" style="padding-top:20px">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">All Projects</div>
+        <h2 class="section-title">Browse by <span class="gradient-text">category</span></h2>
+        <p class="section-desc">Filter the grid to see work from a specific specialty.</p>
+      </div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" alt="Corporate Website" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Corporate Business Website</h3>
+            <p>Modern, responsive corporate site with smooth animations and optimized conversion flow.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="wordpress">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80" alt="E-commerce Store" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>WordPress</span><span>WooCommerce</span></div>
+            <h3>E-Commerce Fashion Store</h3>
+            <p>Full-featured WooCommerce store with custom theme and advanced product filtering.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="uiux">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Dashboard UI" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>Figma</span><span>UI Design</span></div>
+            <h3>Analytics Dashboard UI</h3>
+            <p>Clean, data-driven dashboard UI designed for a SaaS analytics platform.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Landing Page" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>SaaS Product Landing Page</h3>
+            <p>High-converting landing page with animated sections and clear CTA hierarchy.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="wordpress">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80" alt="Blog Website" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>WordPress</span><span>SEO</span></div>
+            <h3>Personal Blog & Portfolio</h3>
+            <p>Custom WordPress blog with SEO optimization and blazing-fast load speeds.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="uiux">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Mobile App Design" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>Figma</span><span>Mobile UI</span></div>
+            <h3>Food Delivery App UI</h3>
+            <p>Complete mobile UI/UX design system for a food ordering and delivery service.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="web">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Agency Website" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>HTML</span><span>CSS</span><span>GSAP</span></div>
+            <h3>Creative Agency Website</h3>
+            <p>Portfolio-driven agency site with scroll-triggered animation and bold typography.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="wordpress">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Restaurant Website" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>WordPress</span><span>Elementor</span></div>
+            <h3>Restaurant & Booking Site</h3>
+            <p>Menu showcase with an integrated table-reservation system and mobile-first layout.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="uiux">
+          <div class="port-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&sat=-40" alt="Fintech UI Kit" loading="lazy" />
+            <div class="port-overlay"><a href="#" class="port-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+          <div class="port-info">
+            <div class="port-tags"><span>Figma</span><span>Design System</span></div>
+            <h3>Fintech Web App UI Kit</h3>
+            <p>A reusable component library and UI kit for a fintech dashboard product.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW I WORK ==================== -->
+  <section class="process-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Process</div>
+        <h2 class="section-title">How I <span class="gradient-text">Work</span></h2>
+        <p class="section-desc">A simple, transparent process from first message to launch day.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="process-num">1</div>
+          <h3>Discovery</h3>
+          <p>We talk through your goals, audience, and budget so the plan actually fits your business.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">2</div>
+          <h3>Design</h3>
+          <p>Wireframes and visual design in Figma — you review and approve before any code is written.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">3</div>
+          <h3>Development</h3>
+          <p>Clean, responsive build with regular check-ins so there are no surprises at the end.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">4</div>
+          <h3>Launch & Support</h3>
+          <p>Testing, deployment, and a support window after launch to fix anything that comes up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="about-cta-section">
+    <div class="container">
+      <h2>Like what you see?</h2>
+      <p>Let's talk about your project — I'll reply within 24 hours with next steps.</p>
+      <a href="contact.html" class="btn-white magnetic">
+        <i class="fas fa-paper-plane"></i> Start a Conversation
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-badge">HM</span>
+          <span class="logo-text">Mishkat</span>
+        </div>
+        <p class="footer-tagline">Crafting digital experiences that convert.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/hmmishkat01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/hmmishkat" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/8801914726066" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:hafazmishkat@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HM Mishkat. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart" style="color:#4F7EFF"></i> from Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    /* CURSOR */
+    const cursorDot  = document.getElementById('cursorDot');
+    const cursorRing = document.getElementById('cursorRing');
+    let mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursorDot.style.left = mx+'px'; cursorDot.style.top = my+'px';
+    });
+    (function loop() {
+      rx += (mx-rx)*.11; ry += (my-ry)*.11;
+      cursorRing.style.left = rx+'px'; cursorRing.style.top = ry+'px';
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a,button,.interest-chip,.value-card,.portfolio-card,.process-step,.filter-btn').forEach(el => {
+      el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering'));
+    });
+
+    /* NAVBAR */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    const backTop   = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('show', window.scrollY > 400);
+    });
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => { hamburger.classList.remove('open'); navLinks.classList.remove('open'); });
+    });
+
+    /* STAGGERED REVEAL */
+    document.querySelectorAll('.portfolio-grid, .process-grid').forEach(grid => {
+      Array.from(grid.children).forEach((child, i) => { child.style.transitionDelay = `${Math.min(i*60,360)}ms`; });
+    });
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); }});
+    }, {threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+    /* PORTFOLIO FILTER */
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+          card.classList.toggle('hidden', filter !== 'all' && card.dataset.cat !== filter);
+        });
+      });
+    });
+
+    /* TILT + SPOTLIGHT */
+    document.querySelectorAll('.portfolio-card, .process-step').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const px = ((e.clientX-r.left)/r.width)*100, py = ((e.clientY-r.top)/r.height)*100;
+        card.style.setProperty('--mx', px+'%'); card.style.setProperty('--my', py+'%');
+      });
+    });
+
+    /* BACK TO TOP */
+    backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+    /* MAGNETIC */
+    document.querySelectorAll('.magnetic,.btn-white').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        btn.style.transform = `translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.22}px)`;
+      });
+      btn.addEventListener('mouseleave', () => btn.style.transform = '');
+    });
+  </script>
+</body>
+</html>

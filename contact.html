@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — HM Mishkat | Web Designer & Developer</title>
+  <meta name="description" content="Get in touch with HM Mishkat for your next website, WordPress store, or UI/UX design project. WhatsApp, email, or the form below — pick whatever's easiest." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <span class="logo-badge">HM</span>
+        <span class="logo-text">Mishkat</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="work.html" class="nav-link">Work</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-text reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Currently available for new projects
+          </div>
+          <h1>Let's build something <span class="gradient-text">worth talking about.</span></h1>
+          <p>
+            Have a project, a rough idea, or just a question? Reach out on WhatsApp for the fastest reply, or use the form below — either way, I usually respond within a few hours.
+          </p>
+          <div class="contact-hero-stats">
+            <div class="work-stat-chip"><strong>&lt;24h</strong><span>Avg. Reply Time</span></div>
+            <div class="work-stat-chip"><strong>🇧🇩</strong><span>Based in Bangladesh</span></div>
+            <div class="work-stat-chip"><strong>🌍</strong><span>Works Worldwide</span></div>
+          </div>
+        </div>
+        <div class="page-hero-img reveal" style="position:relative">
+          <img
+            src="assets/img/profile.png"
+            alt="HM Mishkat"
+            class="page-hero-photo"
+            onerror="this.style.display='none'"
+          />
+          <div class="page-hero-float" style="top:8%; right:-6%">
+            <i class="fab fa-whatsapp"></i>
+            <div><span>Fastest Reply</span><small>via WhatsApp</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BIG CONTACT CARDS ==================== -->
+  <section class="section" style="padding-top:10px">
+    <div class="container">
+
+      <div class="avail-strip reveal">
+        <div class="avail-strip-left">
+          <span class="avail-pulse"></span>
+          <div>
+            <strong>Open to new projects right now</strong>
+            <span>Taking on a limited number of clients this month</span>
+          </div>
+        </div>
+        <a href="https://wa.me/8801914726066" target="_blank" class="btn-primary magnetic">
+          <i class="fab fa-whatsapp"></i> Message on WhatsApp
+        </a>
+      </div>
+
+      <div class="big-contact-grid">
+        <a href="https://wa.me/8801914726066" target="_blank" class="big-contact-card bcc-phone reveal">
+          <div class="bcc-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="bcc-icon"><i class="fab fa-whatsapp"></i></div>
+          <span class="bcc-label">Call / WhatsApp</span>
+          <span class="bcc-value">+880 191-472-6066</span>
+          <p class="bcc-note">Tap to chat directly — this is the quickest way to reach me.</p>
+        </a>
+
+        <a href="mailto:hafazmishkat@gmail.com" class="big-contact-card bcc-email reveal">
+          <div class="bcc-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="bcc-icon"><i class="fas fa-envelope"></i></div>
+          <span class="bcc-label">Email</span>
+          <span class="bcc-value">hafazmishkat@gmail.com</span>
+          <p class="bcc-note">Best for detailed project briefs and file attachments.</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mashfiqur-rahman01/" target="_blank" class="big-contact-card bcc-social reveal">
+          <div class="bcc-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="bcc-icon"><i class="fab fa-linkedin-in"></i></div>
+          <span class="bcc-label">Social</span>
+          <span class="bcc-value">LinkedIn & GitHub</span>
+          <p class="bcc-note">See my work history, code, and professional background.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FORM + INFO ==================== -->
+  <section class="contact section" id="contact" style="padding-top:0">
+    <div class="container">
+      <div class="contact-headline reveal">
+        <span class="ch-emoji">👋</span>
+        <h2>Or, tell me about it <span class="gradient-text">right here.</span></h2>
+        <p>
+          Every great website starts with a conversation. Whether you have a clear vision or just a rough idea — I'm here to listen, understand, and bring it to life. No pressure, no obligation.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info-panel reveal">
+          <div class="contact-personal-note">
+            <p>"I treat every project like it's my own business. I don't just build websites — I build tools that help your business grow. Let's create something you'll be proud of."</p>
+            <div class="note-sig">
+              <div class="sig-avatar">HM</div>
+              <div>
+                <span class="sig-name">HM Mishkat</span>
+                <span class="sig-title">Web Designer & Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="mailto:hafazmishkat@gmail.com" class="contact-channel ch-email">
+            <div class="ch-icon email"><i class="fas fa-envelope"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">Email me at</span>
+              <span class="ch-value">hafazmishkat@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/8801914726066" target="_blank" class="contact-channel ch-wa">
+            <div class="ch-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">WhatsApp</span>
+              <span class="ch-value">+880 191-472-6066</span>
+              <span class="ch-badge"><i class="fas fa-bolt"></i> Fastest reply</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/hmmishkat01-ui" target="_blank" class="contact-channel ch-github">
+            <div class="ch-icon github"><i class="fab fa-github"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">See my code on</span>
+              <span class="ch-value">github.com/hmmishkat01</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mashfiqur-rahman01/" target="_blank" class="contact-channel ch-linkedin">
+            <div class="ch-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div class="ch-text">
+              <span class="ch-label">Professional profile</span>
+              <span class="ch-value">linkedin.com/in/hmmishkat</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <p class="form-title">Send me a message</p>
+          <p class="form-subtitle">I reply within 24 hours. Tell me about your project — the more details, the better.</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="formName" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="formEmail" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="formSubject" placeholder="Project type (Website, WordPress, UI Design…)" />
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" placeholder="Tell me about your project, budget, timeline — anything helps!" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full magnetic">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message received! I'll get back to you within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Questions <span class="gradient-text">people ask</span></h2>
+        <p class="section-desc">A few things clients usually want to know before reaching out.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <div class="faq-q"><span>How fast do you reply?</span><i class="fas fa-plus"></i></div>
+          <div class="faq-a"><p>Usually within a few hours, always within 24. WhatsApp gets the fastest response since I check it throughout the day.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-q"><span>What's your typical project timeline?</span><i class="fas fa-plus"></i></div>
+          <div class="faq-a"><p>A simple website usually takes 1–2 weeks; a WordPress store or larger custom build can take 3–6 weeks depending on scope. I'll give you a clear timeline after our first conversation.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-q"><span>Do you work with clients outside Bangladesh?</span><i class="fas fa-plus"></i></div>
+          <div class="faq-a"><p>Yes — I work remotely with clients worldwide. Time zones aren't usually an issue since most communication happens over WhatsApp and email.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-q"><span>How much does a website cost?</span><i class="fas fa-plus"></i></div>
+          <div class="faq-a"><p>It depends on scope — a landing page costs less than a full e-commerce store. Send a message with your requirements and I'll get back to you with a clear estimate, no obligation.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-q"><span>Do you offer support after launch?</span><i class="fas fa-plus"></i></div>
+          <div class="faq-a"><p>Yes, every project includes a post-launch support window to fix bugs and make small adjustments. Ongoing maintenance plans are also available.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-badge">HM</span>
+          <span class="logo-text">Mishkat</span>
+        </div>
+        <p class="footer-tagline">Crafting digital experiences that convert.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/hmmishkat01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/hmmishkat" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/8801914726066" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:hafazmishkat@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 HM Mishkat. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart" style="color:#4F7EFF"></i> from Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    /* CURSOR */
+    const cursorDot  = document.getElementById('cursorDot');
+    const cursorRing = document.getElementById('cursorRing');
+    let mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursorDot.style.left = mx+'px'; cursorDot.style.top = my+'px';
+    });
+    (function loop() {
+      rx += (mx-rx)*.11; ry += (my-ry)*.11;
+      cursorRing.style.left = rx+'px'; cursorRing.style.top = ry+'px';
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a,button,.big-contact-card,.contact-channel,.faq-q').forEach(el => {
+      el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering'));
+    });
+
+    /* NAVBAR */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    const backTop   = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('show', window.scrollY > 400);
+    });
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => { hamburger.classList.remove('open'); navLinks.classList.remove('open'); });
+    });
+
+    /* STAGGERED REVEAL */
+    document.querySelectorAll('.big-contact-grid, .faq-list').forEach(grid => {
+      Array.from(grid.children).forEach((child, i) => { child.style.transitionDelay = `${Math.min(i*70,420)}ms`; });
+    });
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); }});
+    }, {threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+    /* FAQ ACCORDION */
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const q = item.querySelector('.faq-q');
+      const a = item.querySelector('.faq-a');
+      q.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(o => {
+          o.classList.remove('open');
+          o.querySelector('.faq-a').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          a.style.maxHeight = a.scrollHeight + 'px';
+        }
+      });
+    });
+
+    /* CONTACT FORM */
+    document.getElementById('contactForm')?.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const success = document.getElementById('formSuccess');
+      btn.disabled = true;
+      btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+      setTimeout(() => {
+        btn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+        btn.disabled = false;
+        success.classList.add('show');
+        e.target.reset();
+        setTimeout(() => success.classList.remove('show'), 5000);
+      }, 1800);
+    });
+
+    /* BACK TO TOP */
+    backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+    /* MAGNETIC */
+    document.querySelectorAll('.magnetic,.btn-white').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        btn.style.transform = `translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.22}px)`;
+      });
+      btn.addEventListener('mouseleave', () => btn.style.transform = '');
+    });
+  </script>
+</body>
+</html>
